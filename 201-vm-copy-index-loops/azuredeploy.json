@@ -46,10 +46,9 @@
     "availabilitySetName": "myAvSet",
     "CentOS": {
       "publisher": "OpenLogic",
-        "offer": "CentOS",
-        "sku": "7.2",
-        "version": "latest"
-      }
+      "offer": "CentOS",
+      "sku": "7.2",
+      "version": "latest"
     },
     "Ubuntu": {
       "publisher": "Canonical",
