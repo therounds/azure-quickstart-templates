@@ -25,8 +25,9 @@
     },
     "OS": {
       "type": "string",
-      "defaultValue": "Ubuntu",
+      "defaultValue": "CentOS",
       "allowedValues": [
+        "CentOS",
         "Ubuntu",
         "Windows"
       ],
@@ -43,6 +44,13 @@
     "subnet1Prefix": "10.0.0.0/24",
     "subnet1Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets',variables('virtualNetworkName'),variables('subnet1Name'))]",
     "availabilitySetName": "myAvSet",
+    "CentOS": {
+      "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "7.2",
+        "version": "latest"
+      }
+    },
     "Ubuntu": {
       "publisher": "Canonical",
       "offer": "UbuntuServer",
